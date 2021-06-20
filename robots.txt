@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://mukundshah.com/sitemap.xml
+Sitemap: http://www.mukundshah.com/sitemap.xml
