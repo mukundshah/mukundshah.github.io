@@ -1,0 +1,23 @@
+<header class="poppins md:inline">
+	<figure class="m-auto md:m-0 md:inline">
+		<a href="/"
+			><img class="m-auto md:m-0 md:-ml-3 md:inline" src="splash.svg" width="240px" alt="&lt; Mukund Shah /&gt;"
+		/></a>
+	</figure>
+	<nav class="mt-4 md:float-right">
+		<ul class="flex items-center justify-center m-auto font-medium">
+			{{ $current := .}} 
+			{{ range .Site.Menus.nav }} 
+			{{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .)}}
+			{{ $active = or $active (eq .Name $current.Title) }} 
+			{{ $active = or $active (and (eq .Name "Writings") (eq $current.Section "writings")) }} 
+			{{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+			<li class="inline">
+				<a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
+			</li>
+			
+			{{ end }}
+			
+		</ul>
+	</nav>
+</header>

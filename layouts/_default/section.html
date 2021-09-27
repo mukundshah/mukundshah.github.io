@@ -1,0 +1,15 @@
+{{define "main"}}
+<h1 class="text-3xl font-bold leading-loose poppins">{{.Title}}
+</h1>
+{{/*  <p>A list of my present and past projects.</p>  */}}
+{{/*  <div>{{.Title}}</div>
+{{ partial "breadcrumb" . }}*/}}
+<div class="flex flex-wrap justify-center collection mx-1/10">
+    {{ range sort $.Data.Pages "Params.short_title"}}
+    <a class="mx-2 my-2 font-sans text-2xl font-normal text-center text-white rounded-lg holder w-36 h-36"
+        href="{{.Permalink}}" title="{{.Title}}">
+        <p class="center">{{ .Params.short_title }}</p>
+    </a>
+    {{end}}
+</div>
+{{ end }}
