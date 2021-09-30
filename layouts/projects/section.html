@@ -5,48 +5,48 @@
 {{/*  <p>A list of my present and past projects.</p>  */}}
 {{/*  <div>{{.Title}}</div> */}}
 
-{{/*  <div class="mt-8 flex flex-wrap justify-evenly">  */}}
-    <div class="grid grid-cols-3 gap-x-3.5 gap-y-5 m-auto mt-8">
+{{/*  <div class="flex flex-wrap mt-8 justify-evenly">  */}}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3.5 gap-y-5 m-auto mt-8">
     {{ range sort $.Data.Pages "Params.short_title"}}
-    {{/*  <div class="bg-white shadow-md border border-gray-200 rounded-lg w-56 m-3">
+    {{/*  <div class="w-56 m-3 bg-white border border-gray-200 rounded-lg shadow-md">
         <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
         <div class="p-5">
             <a href="#">
-                <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">{{.Title}}</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{.Title}}</h5>
             </a>
-            <p class="font-normal text-gray-700 mb-3">{{.Description}}</p>
-            <a href="#" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center items-center">
+            <p class="mb-3 font-normal text-gray-700">{{.Description}}</p>
+            <a href="#" class="items-center block px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
                 Preview
-                <svg class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
-            <a href="#" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center items-center">
+            <a href="#" class="items-center block px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
                 GitHub
-                <svg class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
         </div>
     </div>  */}}
-    <div class="border border-blue-200 rounded-lg bg-white">
-        <div class="h-48 object-cover rounded-t-lg" style="background-image: url('https://taamannae.dev/assets/rucker.svg'); background-color: rgb(255, 255, 255);" ></div>
-        <!-- <div class="relative float-right z-10"><a><div class="rounded-full shadow h-12 w-12 text-center">G</div></a><a class="rounded-full shadow h-12 w-12">P</a></div> -->
+    <div class="bg-white border border-blue-200 rounded-lg">
+        <div class="object-cover h-48 rounded-t-lg" style="background-image: url('https://taamannae.dev/assets/rucker.svg'); background-color: rgb(255, 255, 255);" ></div>
+        <!-- <div class="relative z-10 float-right"><a><div class="w-12 h-12 text-center rounded-full shadow">G</div></a><a class="w-12 h-12 rounded-full shadow">P</a></div> -->
         <div class="showhim">
-        <div class="p-6 h-64">
-            <h4 class="text-xl font-semibold">Datafold DatafoldDatafoldDatafold</h4>
-            <p class="poppins text-sm mt-3">
-                Datafold is a Y Combinator 2020 company that helps companies maintain data 
-                quality and integrity.I was contracted for designing a landing page for them
-            </p>
-            <div class="mt-6 flex flex-row justify-between">
-                <a class="text-sm font-medium poppins text-gray-700 text-center hover:border-b-2 hover:border-b-black hover:text-black" href="#" target="_blank">View preview <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 48 48"
-                    style=" fill:currentColor;" class="inline"><path d="M 40.960938 4.9804688 A 2.0002 2.0002 0 0 0 40.740234 5 L 28 5 A 2.0002 2.0002 0 1 0 28 9 L 36.171875 9 L 22.585938 22.585938 A 2.0002 2.0002 0 1 0 25.414062 25.414062 L 39 11.828125 L 39 20 A 2.0002 2.0002 0 1 0 43 20 L 43 7.2460938 A 2.0002 2.0002 0 0 0 40.960938 4.9804688 z M 12.5 8 C 8.3826878 8 5 11.382688 5 15.5 L 5 35.5 C 5 39.617312 8.3826878 43 12.5 43 L 32.5 43 C 36.617312 43 40 39.617312 40 35.5 L 40 26 A 2.0002 2.0002 0 1 0 36 26 L 36 35.5 C 36 37.446688 34.446688 39 32.5 39 L 12.5 39 C 10.553312 39 9 37.446688 9 35.5 L 9 15.5 C 9 13.553312 10.553312 12 12.5 12 L 22 12 A 2.0002 2.0002 0 1 0 22 8 L 12.5 8 z"></path></svg></a>
-                <a class="text-sm font-medium poppins text-gray-700 text-center hover:border-b-2 hover:border-b-black hover:text-black" href="#" target="_blank">Browse code <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 48 48"
-                    style=" fill:currentColor;" class="inline"><path d="M 40.960938 4.9804688 A 2.0002 2.0002 0 0 0 40.740234 5 L 28 5 A 2.0002 2.0002 0 1 0 28 9 L 36.171875 9 L 22.585938 22.585938 A 2.0002 2.0002 0 1 0 25.414062 25.414062 L 39 11.828125 L 39 20 A 2.0002 2.0002 0 1 0 43 20 L 43 7.2460938 A 2.0002 2.0002 0 0 0 40.960938 4.9804688 z M 12.5 8 C 8.3826878 8 5 11.382688 5 15.5 L 5 35.5 C 5 39.617312 8.3826878 43 12.5 43 L 32.5 43 C 36.617312 43 40 39.617312 40 35.5 L 40 26 A 2.0002 2.0002 0 1 0 36 26 L 36 35.5 C 36 37.446688 34.446688 39 32.5 39 L 12.5 39 C 10.553312 39 9 37.446688 9 35.5 L 9 15.5 C 9 13.553312 10.553312 12 12.5 12 L 22 12 A 2.0002 2.0002 0 1 0 22 8 L 12.5 8 z"></path></svg></a>
-             </div>
+        <div class="h-56 p-6 pb-0">
+            <h4 class="text-xl font-semibold">{{.Title}}</h4>
+            <div class="mt-3 text-sm text-black poppins">
+                {{.Content}}
+            </div>
+            
         </div>
-        {{/*  <div class="p-6 h-64 showme">
+        <div class="flex flex-row justify-between p-6 pb-5">
+            <a class="h-5 text-sm font-medium text-center text-gray-700 poppins hover:border-b-2 hover:border-b-black hover:text-black" href="{{.Params.link}}" target="_blank">View preview <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="16" height="16"
+                viewBox="0 0 48 48"
+                style=" fill:currentColor;" class="inline"><path d="M 40.960938 4.9804688 A 2.0002 2.0002 0 0 0 40.740234 5 L 28 5 A 2.0002 2.0002 0 1 0 28 9 L 36.171875 9 L 22.585938 22.585938 A 2.0002 2.0002 0 1 0 25.414062 25.414062 L 39 11.828125 L 39 20 A 2.0002 2.0002 0 1 0 43 20 L 43 7.2460938 A 2.0002 2.0002 0 0 0 40.960938 4.9804688 z M 12.5 8 C 8.3826878 8 5 11.382688 5 15.5 L 5 35.5 C 5 39.617312 8.3826878 43 12.5 43 L 32.5 43 C 36.617312 43 40 39.617312 40 35.5 L 40 26 A 2.0002 2.0002 0 1 0 36 26 L 36 35.5 C 36 37.446688 34.446688 39 32.5 39 L 12.5 39 C 10.553312 39 9 37.446688 9 35.5 L 9 15.5 C 9 13.553312 10.553312 12 12.5 12 L 22 12 A 2.0002 2.0002 0 1 0 22 8 L 12.5 8 z"></path></svg></a>
+            <a class="h-5 text-sm font-medium text-center text-gray-700 poppins hover:border-b-2 hover:border-b-black hover:text-black" href="{{.Params.repo}}" target="_blank">Browse code <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="16" height="16"
+                viewBox="0 0 48 48"
+                style=" fill:currentColor;" class="inline"><path d="M 40.960938 4.9804688 A 2.0002 2.0002 0 0 0 40.740234 5 L 28 5 A 2.0002 2.0002 0 1 0 28 9 L 36.171875 9 L 22.585938 22.585938 A 2.0002 2.0002 0 1 0 25.414062 25.414062 L 39 11.828125 L 39 20 A 2.0002 2.0002 0 1 0 43 20 L 43 7.2460938 A 2.0002 2.0002 0 0 0 40.960938 4.9804688 z M 12.5 8 C 8.3826878 8 5 11.382688 5 15.5 L 5 35.5 C 5 39.617312 8.3826878 43 12.5 43 L 32.5 43 C 36.617312 43 40 39.617312 40 35.5 L 40 26 A 2.0002 2.0002 0 1 0 36 26 L 36 35.5 C 36 37.446688 34.446688 39 32.5 39 L 12.5 39 C 10.553312 39 9 37.446688 9 35.5 L 9 15.5 C 9 13.553312 10.553312 12 12.5 12 L 22 12 A 2.0002 2.0002 0 1 0 22 8 L 12.5 8 z"></path></svg></a>
+         </div>
+        {{/*  <div class="h-64 p-6 showme">
             <a class="mt-9 block bg-blue-500 px-5 py-3 text-base shadow-sm font-semibold poppins tracking-wider text-blue-100 rounded-lg hover:shadow-lg hover:bg-blue-800 text-center hover:-translate-y-0.5" href="#">View preview</a>
             <a class="mt-7 block bg-black px-5 py-3 text-base shadow-sm font-semibold poppins tracking-wider text-white rounded-lg hover:shadow-lg hover:bg-gray-800 text-center hover:-translate-y-0.5" href="#">Browse code</a>
             
@@ -54,9 +54,8 @@
          
         </div>
         
-
 </div>
-    {{/*  <div class="bg-white shadow-md border border-gray-200 rounded w-72 h-96 m-3 bg-blue-500"></div>  */}}
+    {{/*  <div class="m-3 bg-white bg-blue-500 border border-gray-200 rounded shadow-md w-72 h-96"></div>  */}}
     {{end}}
 </div>
 {{ end }}

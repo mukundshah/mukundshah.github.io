@@ -1,10 +1,8 @@
 <header class="poppins md:inline">
 	<figure class="m-auto md:m-0 md:inline">
-		<a href="/"
-			><img class="m-auto md:m-0 md:-ml-3 md:inline" src="splash.svg" width="240px" alt="&lt; Mukund Shah /&gt;"
-		/></a>
+		<a href="/" class="m-auto text-center md:m-0 md:-ml-3 md:inline w-60">{{ partial "site-logo.html" . }}</a>
 	</figure>
-	<nav class="mt-4 md:float-right">
+	<nav class="mt-2 md:float-right">
 		<ul class="flex items-center justify-center m-auto font-medium">
 			{{ $current := .}} 
 			{{ range .Site.Menus.nav }} 
