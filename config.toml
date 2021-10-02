@@ -1,0 +1,17 @@
+baseURL = 'https://mukundshah.com/'
+languageCode = 'en-us'
+title = 'Mukund Shah'
+
+[menu]
+  [[menu.nav]]
+    name = "Writings"
+    url = "/writings/"
+    weight = 1
+  [[menu.nav]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[menu.nav]]
+    name = "About"
+    url = "/about/"
+    weight = 3

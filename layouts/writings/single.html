@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{/*  {{.Title}} */}}
+{{ partial "breadcrumb" . }}
+<h1 class="text-3xl font-bold leading-loose poppins">{{.Title}}
+</h1>
+<article class="mt-7">
+   {{.Content}}
+</article>
+
+{{ end }}
