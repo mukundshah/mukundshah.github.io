@@ -1,6 +1,18 @@
 baseURL = 'https://mukundshah.com/'
 languageCode = 'en-us'
 title = 'Mukund Shah'
+env = "production"
+enableRobotsTXT = true
+canonifyURLs = true
+
+author = "Mukund Shah"
+github = "https://github.com/mukundshah"
+sitename = "Mukund Shah"
+
+favicon = "static/favicon.ico"
+svgIcon = "static/favicon.svg"
+appleTouchIcon = "static/apple-touch-icon.png"
+
 
 [menu]
   [[menu.nav]]
