@@ -1,7 +1,8 @@
 {
 	"dependencies": {},
 	"devDependencies": {
-		"tailwindcss": "^2.2.16",
-		"@tailwindcss/line-clamp": "^0.2.2"
+		"@tailwindcss/line-clamp": "^0.2.2",
+		"@tailwindcss/typography": "^0.4.1",
+		"tailwindcss": "^2.2.16"
 	}
 }
