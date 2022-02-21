@@ -1,4 +1,4 @@
-baseURL = 'https://mukundshah.com/'
+baseURL = 'https://mukundshah.com.np/'
 languageCode = 'en-us'
 title = 'Mukund Shah'
 env = "production"
