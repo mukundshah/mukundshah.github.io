@@ -1,14 +1,10 @@
 module.exports = {
-	purge: [],
-	darkMode: false, // or 'media' or 'class'
-	theme: {
-		extend: {},
-	},
-	variants: {
-		extend: {},
-	},
-	plugins: [
-		require("@tailwindcss/line-clamp"),
-		require("@tailwindcss/typography"),
-	],
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/typography"),
+  ],
 }
