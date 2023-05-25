@@ -1,14 +1,18 @@
 <script lang="ts" setup>
 const navigations = [
   {
-    name: "Blogs",
-    path: "/blogs",
+    name: "Writings",
+    path: "/writings",
   },
   {
     name: "Projects",
     path: "/projects",
   },
-]
+  {
+    name: "About",
+    path: "/about",
+  },
+];
 </script>
 
 <template>
