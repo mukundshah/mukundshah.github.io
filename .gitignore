@@ -1,8 +1,9 @@
-# Hugo
-/public/
-/resources/_gen/
-
-# Mac File System File...utterly useless to anyone but me.
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
 .DS_Store
-
-/node_modules
