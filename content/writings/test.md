@@ -6,6 +6,12 @@ icon: 🧪
 draft: true
 ---
 
-::: tip
-This is a tip
-:::
+`code inline`.
+
+`const codeInline: string = 'highlighted code inline'`{lang="ts"}
+
+```js [file.js]{4-6,7} meta-info=val
+export default () => {
+  console.log("Code block");
+};
+```

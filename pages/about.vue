@@ -3,6 +3,15 @@ import { Stacks as stacks, Experiences as experiences } from "~/data";
 </script>
 
 <template>
+  <section class="bg-white">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 lg:py-12">
+      <div class="flex flex-col space-y-4 space-y-reverse">
+        <h1 class="text-4xl font-bold leading-normal font-poppins">About Me</h1>
+        <p class="text-lg text-gray-700"></p>
+      </div>
+      <!-- <p class="mt-6 max-w-lg text-base/relaxed text-gray-600"></p> -->
+    </div>
+  </section>
   <section class="mx-auto max-w-screen-xl px-4 pb-8 lg:pb-12">
     <h2 class="text-2xl font-semibold leading-normal font-poppins">Stack</h2>
     <ul class="space-y-8 mt-6">

@@ -4,6 +4,11 @@ export default defineNuxtConfig({
     rootTag: "body",
   },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxtjs/google-fonts"],
+  content: {
+    highlight: {
+      theme: "github-dark",
+    },
+  },
   googleFonts: {
     useStylesheet: true,
     families: {
@@ -11,4 +16,4 @@ export default defineNuxtConfig({
       Raleway: true,
     },
   },
-})
+});
