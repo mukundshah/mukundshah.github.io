@@ -12,7 +12,7 @@ const listQuery: QueryBuilderParams = {
   sort: [{ date: -1 }],
   where: [
     {
-      $and: [{ isDraft: { $ne: true } }, { isIndex: { $ne: true } }],
+      $and: [{ draft: { $ne: true } }, { isIndex: { $ne: true } }],
     },
   ],
 };

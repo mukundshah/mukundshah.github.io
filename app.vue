@@ -1,5 +1,9 @@
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <Body class="min-h-screen flex flex-col">
+    <Header></Header>
+    <main class="">
+      <NuxtPage />
+    </main>
+    <Footer class="mt-auto"></Footer>
+  </Body>
 </template>
