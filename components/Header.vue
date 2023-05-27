@@ -1,14 +1,6 @@
 <script lang="ts" setup>
 const navigations = [
   {
-    name: "Writings",
-    path: "/writings",
-  },
-  {
-    name: "Projects",
-    path: "/projects",
-  },
-  {
     name: "About",
     path: "/about",
   },
@@ -32,6 +24,17 @@ const navigations = [
       </figure>
       <nav class="">
         <ul class="gap-4 flex items-center">
+          <ContentNavigation v-slot="{ navigation }">
+            <li v-for="link of navigation" :key="link._path">
+              <NuxtLink :to="link._path">
+                <div
+                  class="block text-sm font-medium text-gray-900 hover:opacity-75"
+                >
+                  {{ link.title }}
+                </div>
+              </NuxtLink>
+            </li>
+          </ContentNavigation>
           <template v-for="(navigation, index) in navigations" :key="index">
             <li>
               <NuxtLink :to="navigation.path">
