@@ -3,7 +3,7 @@
   <!-- <footer class="mt-auto text-sm text-center font-poppins"> -->
   <footer class="border-t border-gray-200 bg-white">
     <div class="mx-auto max-w-screen-xl px-4 py-4">
-      <div class="flex justify-between">
+      <div class="flex justify-between flex-col-reverse gap-2 md:flex-row">
         <div>
           <p class="text-sm text-center font-poppins">
             Built with ❤️ using

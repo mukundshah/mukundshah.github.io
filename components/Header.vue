@@ -11,9 +11,9 @@ const navigations = [
   <!-- <header class="font-poppins md:inline"> -->
   <header class="sticky inset-x-0 top-0 z-50 border-b border-gray-200 bg-white">
     <div
-      class="mx-auto max-w-screen-xl px-4 relative flex h-16 items-center justify-between gap-8"
+      class="mx-auto max-w-screen-xl px-4 relative flex flex-col md:flex-row py-4 items-center justify-between gap-4"
     >
-      <figure class="m-auto md:m-0 md:inline">
+      <figure>
         <NuxtLink to="/">
           <span class="sr-only">Mukund Shah</span>
           <Logo
