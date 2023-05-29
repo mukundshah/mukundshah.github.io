@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Contact as contact } from "~/data";
+import { Contact as contact, Description as description } from "~/data";
 </script>
 
 <template>
@@ -12,10 +12,7 @@ import { Contact as contact } from "~/data";
       </h1>
 
       <p class="mt-6 max-w-xl text-base/relaxed text-gray-600">
-        An experienced Full Stack Web Developer creating inclusive and robust
-        web apps. Passionate about intuitive interfaces, performance
-        optimization, and secure solutions. Committed to accessibility and
-        inclusive design for exceptional digital experiences.
+        {{ description }}
       </p>
       <!-- prettier-ignore -->
       <p class="mt-6 max-w-xl text-base/relaxed text-gray-600">

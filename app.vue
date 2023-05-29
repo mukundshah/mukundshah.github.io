@@ -1,5 +1,6 @@
 <template>
   <Body class="min-h-screen flex flex-col">
+    <SeoKit />
     <Header></Header>
     <main class="">
       <NuxtPage />

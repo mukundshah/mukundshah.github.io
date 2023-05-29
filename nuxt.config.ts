@@ -1,7 +1,18 @@
+import { Description } from "./data";
 export default defineNuxtConfig({
+  extends: ["nuxt-seo-kit"],
   app: {
     rootId: "site",
     rootTag: "body",
+  },
+  runtimeConfig: {
+    public: {
+      siteUrl: "https://mukundshah.com.np",
+      siteName: "Mukund Shah",
+      siteDescription: Description,
+      language: "en",
+      titleSeparator: " - ",
+    },
   },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxtjs/google-fonts"],
   content: {
