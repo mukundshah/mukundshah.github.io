@@ -1,5 +1,9 @@
 <script lang="ts" setup>
 import { Contact as contact, Description as description } from "~/data";
+useHead({
+  titleTemplate: "%s",
+  title: "Mukund Shah",
+});
 </script>
 
 <template>

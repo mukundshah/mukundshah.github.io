@@ -17,7 +17,7 @@ const navigations = [
         <NuxtLink to="/">
           <span class="sr-only">Mukund Shah</span>
           <Logo
-            class="block mx-auto text-center md:inline w-60"
+            class="block mx-auto text-center md:inline w-60 -ml-3"
             aria-hidden="true"
           />
         </NuxtLink>

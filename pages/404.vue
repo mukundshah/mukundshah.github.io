@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 useHead({
   titleTemplate: "%s",
+  title: "404 - Page Not Found",
 });
 definePageMeta({
-  title: "404 - Page Not Found",
   description:
     "The link you followed may be broken or the page is no longer available.",
 });
