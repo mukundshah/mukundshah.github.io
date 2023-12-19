@@ -130,14 +130,31 @@ export const Stacks = {
 
 export const Experiences = [
   {
-    title: "Full-Stack Web Developer",
+    title: "Software Engineer",
     company: {
-      name: "iTechStore",
-      url: "https://itechstore.com.np/",
-      logo: "https://itechstore.com.np/android-chrome-192x192.png",
+      name: "Awecode",
+      url: "https://awecode.com/",
+      logo: "/assets/img/awecode.jpg",
       location: "Kathmandu, Nepal",
     },
-    range: "May 2022 - Present",
+    range: "Nov 2022 - Present",
+    description: null,
+    skills: [
+      // {
+      //   name: "React",
+      //   color: "bg-blue-500",
+      // },
+    ],
+  },
+  {
+    title: "Associate Software Engineer",
+    company: {
+      name: "Awecode",
+      url: "https://awecode.com/",
+      logo: "/assets/img/awecode.jpg",
+      location: "Kathmandu, Nepal",
+    },
+    range: "May 2022 - Nov 2022",
     description: null,
     skills: [
       // {
@@ -149,12 +166,12 @@ export const Experiences = [
   {
     title: "Full-Stack Web Developer",
     company: {
-      name: "Awecode",
-      url: "https://awecode.com/",
-      logo: "/assets/img/awecode.jpg",
+      name: "iTechStore",
+      url: "https://itechstore.com.np/",
+      logo: "https://itechstore.com.np/android-chrome-192x192.png",
       location: "Kathmandu, Nepal",
     },
-    range: "Apr 2021 - May 2022",
+    range: "Apr 2021 - Feb 2022",
     description: null,
     skills: [
       // {
