@@ -1,6 +1,5 @@
 import { Description } from "./data";
 export default defineNuxtConfig({
-  extends: ["nuxt-seo-kit"],
   app: {
     rootId: "site",
     rootTag: "body",
@@ -17,17 +16,10 @@ export default defineNuxtConfig({
       titleSeparator: "-",
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxtjs/google-fonts"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxt/fonts", "@nuxtjs/seo"],
   content: {
     highlight: {
       theme: "github-dark",
     },
-  },
-  googleFonts: {
-    useStylesheet: true,
-    families: {
-      Poppins: true,
-      Raleway: true,
-    },
-  },
+  }
 });
