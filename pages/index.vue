@@ -18,7 +18,7 @@ const socialLinks = [
     <article class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12">
       <div class="flex flex-col gap-8">
         <h1 class="text-3xl text-neutral-100">
-          Hi, I'm Mukund 👋
+          Hi, I'm Mukund 🤓
         </h1>
 
         <p class="w-auto max-w-[60ch] leading-6">
