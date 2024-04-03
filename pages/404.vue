@@ -1,27 +1,20 @@
 <script lang="ts" setup>
 useHead({
-  titleTemplate: "%s",
-  title: "404 - Page Not Found",
-});
+  titleTemplate: '%s',
+  title: '404 - Page Not Found',
+})
 definePageMeta({
   description:
-    "The link you followed may be broken or the page is no longer available.",
-});
+    'The link you followed may be broken or the page is no longer available.',
+})
 </script>
+
 <template>
-  <div class="flex items-center justify-center h-screen">
-    <div class="leading-loose text-center center -mt-12">
-      <span class="text-9xl font-raleway">404</span>
-      <br />
-      <span class="text-3xl leading-loose">Page not found</span>
-      <br /><br />
-      <span class="text-sm text-gray-700">
-        The link you followed may be broken or the page is no longer available.
-        <br />
-        <a class="text-base font-semibold text-black" href="/">
-          &larr; Go back to previous page.
-        </a>
-      </span>
+  <main class="flex flex-col gap-20 grow h-full">
+    <div class="flex flex-col gap-8 items-center justify-center h-full grow">
+      <p>
+        404 | Page Not Found
+      </p>
     </div>
-  </div>
+  </main>
 </template>

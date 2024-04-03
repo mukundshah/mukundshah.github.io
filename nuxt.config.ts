@@ -1,25 +1,26 @@
-import { Description } from "./data";
+import { Description } from './data'
+
 export default defineNuxtConfig({
   app: {
-    rootId: "site",
-    rootTag: "body",
+    rootId: 'site',
+    // rootTag: "body",
   },
   routeRules: {
-    "/404": { index: false },
+    '/404': { index: false },
   },
   runtimeConfig: {
     public: {
-      siteUrl: "https://mukundshah.com.np",
-      siteName: "Mukund Shah",
+      siteUrl: 'https://mukundshah.com.np',
+      siteName: 'Mukund Shah',
       siteDescription: Description,
-      language: "en",
-      titleSeparator: "-",
+      language: 'en',
+      titleSeparator: '-',
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxt/fonts", "@nuxtjs/seo"],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/fonts', '@nuxtjs/seo'],
   content: {
     highlight: {
-      theme: "github-dark",
+      theme: 'github-dark',
     },
-  }
-});
+  },
+})

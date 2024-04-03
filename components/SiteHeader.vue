@@ -2,7 +2,7 @@
 const navItems = [
   { label: 'Home', to: '/' },
   { label: 'Posts', to: '/posts' },
-  { label: 'About', to: '/about' },
+  // { label: 'About', to: '/about' },
 ]
 </script>
 
