@@ -1,13 +1,20 @@
 import { Description } from './data'
 
 export default defineNuxtConfig({
+  modules: [
+    '@nuxt/fonts',
+    // '@nuxt/content',
+    '@nuxtjs/seo',
+    '@nuxtjs/tailwindcss',
+  ],
+
   app: {
     rootId: 'site',
     // rootTag: "body",
   },
-  routeRules: {
-    '/404': { index: false },
-  },
+  // routeRules: {
+  //   '/404': { index: false },
+  // },
   runtimeConfig: {
     public: {
       siteUrl: 'https://mukundshah.com.np',
@@ -17,7 +24,14 @@ export default defineNuxtConfig({
       titleSeparator: '-',
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/fonts', '@nuxtjs/seo'],
+
+  site: {
+    name: 'Mukund Shah',
+    url: 'https://mukundshah.com.np',
+    description: Description,
+    keywords: ['Mukund Shah', 'Software Engineer', 'Full Stack Developer', 'Nepal'],
+  },
+
   content: {
     highlight: {
       theme: 'github-dark',

@@ -1,22 +1,3 @@
-<script lang="ts" setup>
-import { Contact as contact, Description as description } from '~/data'
-
-useHead({
-  titleTemplate: '%s',
-  title: 'Mukund Shah',
-})
-
-const socialLinks = [
-  { label: 'LinkedIn', to: `https://linkedin.com/in/${contact.linkedin}` },
-  { label: 'GitHub', to: `https://github.com/${contact.github}` },
-]
-
-// const socialLinksWithEmail = [
-//   { label: 'Email', to: `mailto:${contact.email}` },
-//   ...socialLinks,
-// ]
-</script>
-
 <template>
   <main class="flex flex-col gap-20">
     <article class="flex flex-col gap-8 max-w-xl">
