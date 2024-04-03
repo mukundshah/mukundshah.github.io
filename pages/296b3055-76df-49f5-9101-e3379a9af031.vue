@@ -40,7 +40,7 @@
         <br /><br />
         From 6:30 PM to 11:00 PM, I'm all set to collaborate, ensuring we have ample time to work together directly. And yes, we're talking about a solid 40-hour week commitment from my end. The rest of those hours? I’ll be fitting them in flexibly around my other commitments. And don’t worry, I’m pretty good at managing my time, so I might even sneak in a bit more work during the midnight if needed. But hey, rest easy about my health and sleep; I’ve got that all balanced out. Your project and my well-being will both be in top shape!
         <br /><br />
-        Still in college and navigating through my Junior year, I’ll need a little breather during finals, but that’s the only pause on my journey. And don’t worry, the legal checkboxes for remote work and international travel are all ticked off on my end!
+        Still in college and navigating through my Senior year, I’ll need a little breather during finals, but that’s the only pause on my journey. And don’t worry, the legal checkboxes for remote work and international travel are all ticked off on my end!
       </p>
       <!--
       <p class="w-auto leading-6">
