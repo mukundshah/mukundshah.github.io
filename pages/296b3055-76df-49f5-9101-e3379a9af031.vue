@@ -15,7 +15,7 @@
       </div>
 
       <h2 class="text-xl text-neutral-100">
-        Hello there!
+        Hello there! 👋
       </h2>
       <p class="w-auto leading-6">
         I’m <NuxtLink to="/" class="text-fuchsia-400 underline underline-offset-2">
@@ -53,7 +53,7 @@
       </p> -->
 
       <h2 class="text-xl text-neutral-100">
-        Why am I on this quest for a second job, you ask?
+        Why am I on this quest for a second job, you ask? 🤔
       </h2>
 
       <p class="w-auto leading-6">
@@ -111,7 +111,7 @@
       </ul>
 
       <h2 class="text-xl text-neutral-100">
-        Open source?
+        Open source? Count me in! 🌟
       </h2>
 
       <p class="w-auto leading-6">
@@ -171,7 +171,7 @@
       </p>
 
       <h2 class="text-xl text-neutral-100">
-        Leadership...
+        Leadership... a new chapter 📖
       </h2>
 
       <p class="w-auto leading-6">
@@ -179,7 +179,7 @@
       </p>
 
       <h2 class="text-xl text-neutral-100">
-        Low-Level Adventures
+        Low-Level Adventures 🚀
       </h2>
 
       <p class="w-auto leading-6">
