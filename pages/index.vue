@@ -6,6 +6,8 @@ const socialLinks = [
   { label: 'GitHub', to: `https://github.com/${contact.github}` },
 ]
 
+defineOgImageComponent('OgImageSplash')
+
 // const socialLinksWithEmail = [
 //   { label: 'Email', to: `mailto:${contact.email}` },
 //   ...socialLinks,
