@@ -6,7 +6,7 @@ defineProps<{ links: Array<{ label: string, to: string }> }>()
   <ul role="list" class="flex flex-row gap-2">
     <template v-for="(link, index) in links" :key="index">
       <li>
-        <NuxtLink :to="link.to" class="hover:text-neutral-100" active-class="text-neutral-100">
+        <NuxtLink :to="link.to" class="hover:text-neutral-100 transition" active-class="text-neutral-100">
           {{ link.label }}
         </NuxtLink>
       </li>
