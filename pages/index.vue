@@ -1,10 +1,5 @@
 <script lang="ts" setup>
-import { Contact as contact, Description as description } from '~/data'
-
-useHead({
-  titleTemplate: '%s',
-  title: 'Mukund Shah',
-})
+import { Contact as contact } from '~/data'
 
 const socialLinks = [
   { label: 'LinkedIn', to: `https://linkedin.com/in/${contact.linkedin}` },
