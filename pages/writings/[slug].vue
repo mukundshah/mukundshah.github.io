@@ -9,15 +9,15 @@
           <h1 class="text-4xl text-white">
             {{ doc.title }}
           </h1>
-          <p> {{ formattedDate(doc.publishedAt) }} - {{ doc.readingMins }} min read </p>
           <p class="italic">
             {{ doc.description }}
           </p>
+          <p> {{ formattedDate(doc.publishedAt) }} &bull; {{ doc.readingMins }} min read </p>
         </header>
         <ContentRenderer :value="doc" class="post" />
       </template>
       <template #not-found>
-        <p class="text-neutral-400 text-center">
+        <p class="text-center text-neutral-400">
           Article not found.
         </p>
       </template>
@@ -27,7 +27,7 @@
 
 <style>
 .post h2 {
-  @apply mt-6 text-3xl text-neutral-100;
+  @apply mt-6 text-2xl text-neutral-100;
 }
 
 .post h3 {
@@ -47,8 +47,20 @@
   @apply text-neutral-100 underline;
 }
 
+.post img {
+  @apply rounded my-4;
+}
+
 .post ul {
-  @apply list-disc;
+  @apply list-disc pl-4;
+}
+
+.post ol {
+  @apply list-decimal pl-4;
+}
+
+.post li {
+  @apply mt-2;
 }
 
 .post blockquote {
@@ -60,11 +72,11 @@
 }
 
 .post pre {
-  @apply px-4 my-2 bg-[#11111b] rounded;
+  @apply px-6 my-2 -inset-4 bg-[#11111b] rounded;
 }
 
 .post pre > code {
-  @apply bg-transparent;
+  @apply bg-transparent text-sm leading-relaxed;
 }
 
 .post code {
