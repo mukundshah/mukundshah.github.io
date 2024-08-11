@@ -3,7 +3,6 @@ title: "Cloudflare www Redirect"
 description: "Redirect 'https://www' URLs to 'https://' with Cloudflare 301 Redirect, post page rule deprecation"
 publishedAt: 2024-06-10 3:00:00
 readingMins: 5
-draft: true
 ---
 
 Since many websites prioritize a clean, non-www domain for user experience and SEO (Search Engine Optimization), redirects from www subdomains are commonplace. Previously, Cloudflare's Page Rules offered a straightforward solution. However, with Page Rules being deprecated, here's how to achieve www redirects using Cloudflare's alternative methods.
