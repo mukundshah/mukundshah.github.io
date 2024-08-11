@@ -1,6 +1,8 @@
 import { Description } from './data'
 
 export default defineNuxtConfig({
+  compatibilityDate: '2024-08-11',
+
   modules: [
     '@nuxt/fonts',
     '@nuxt/eslint',

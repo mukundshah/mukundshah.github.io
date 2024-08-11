@@ -4,10 +4,9 @@ import withNuxt from './.nuxt/eslint.config.mjs'
 
 export default withNuxt(
   antfu({
+    lessOpinionated: true,
     stylistic: {
       overrides: {
-        'antfu/if-newline': 'off',
-        'antfu/top-level-function': 'off',
         'curly': ['error', 'multi-line', 'consistent'],
         'style/brace-style': ['error', '1tbs', { allowSingleLine: false }],
       },
