@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/fonts',
-    "@nuxt/image",
+    '@nuxt/image',
     '@nuxt/eslint',
     '@nuxt/content',
     '@nuxtjs/seo',
@@ -36,6 +36,22 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       theme: 'catppuccin-mocha',
+      langs: [
+        'bash',
+        'css',
+        'html',
+        'js',
+        'json',
+        'jsx',
+        'md',
+        'mdc',
+        'properties',
+        'ssh-config',
+        'ts',
+        'tsx',
+        'vue',
+        'yaml',
+      ],
     },
   },
 })

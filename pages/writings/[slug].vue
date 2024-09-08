@@ -72,7 +72,7 @@
 }
 
 .post pre {
-  @apply px-6 my-2 -inset-4 bg-[#11111b] rounded;
+  @apply px-6 my-2 -inset-4 bg-[#11111b] rounded overflow-x-auto;
 }
 
 .post pre > code {
