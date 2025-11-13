@@ -18,21 +18,19 @@ defineOgImageComponent('OgImageSplash')
   <main class="flex flex-col gap-20">
     <article class="flex flex-col gap-8">
       <h1 class="text-3xl text-neutral-100">
-        Hi, I'm Mukund 🤓
+        Hi, I'm Mukund 👋
       </h1>
 
       <p class="w-auto max-w-[60ch] leading-6">
-        a passionate <span class="text-fuchsia-400"> full stack web developer </span>
-        with over <span class="text-fuchsia-400"> 3 years </span> of experience creating inclusive and robust web apps.
+        a <span class="text-fuchsia-400"> product-centric full-stack engineer </span>
+        with <span class="text-fuchsia-400"> 4+ years </span> of experience building fintech and consumer-facing apps at scale.
+        Passionate about simplifying money and creating user-first products.
 
         <br />
         <br />
 
-        <span class="text-fuchsia-400">Vue.js (Typescript)</span> and <span class="text-fuchsia-400">Python</span> are my go-to languages.
-        Lately I've been exploring <span class="text-fuchsia-400">Go</span> and <span class="text-fuchsia-400">Rust</span> for fun.
-      </p>
-
-      <p class="w-auto max-w-[60ch] leading-6">
+        <span class="text-fuchsia-400">TypeScript</span>, <span class="text-fuchsia-400">Python</span>, and <span class="text-fuchsia-400">Go</span> are my primary languages.
+        I work with <span class="text-fuchsia-400">Vue/Nuxt</span>, <span class="text-fuchsia-400">React/Next.js</span>, and <span class="text-fuchsia-400">Django/FastAPI</span> to build scalable, secure platforms.
       </p>
 
       <!-- <Links :links="socialLinksWithEmail" /> -->
@@ -45,7 +43,7 @@ defineOgImageComponent('OgImageSplash')
       </header>
       <p>
         Email me at
-        <NuxtLink :to="`mailto:${contact.email}`" class="hover:text-neutral-100" active-class="text-neutral-100">
+        <NuxtLink :to="`mailto:${contact.email}`" class="underline decoration-dotted hover:text-neutral-100" active-class="text-neutral-100">
           {{ contact.email }}
         </NuxtLink>
         or follow me via my social links.
