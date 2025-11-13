@@ -1,5 +1,4 @@
-export const Description
-  = 'An experienced Full Stack Web Developer creating inclusive and robust web apps. Passionate about intuitive interfaces, performance optimization, and secure solutions. Committed to accessibility and inclusive design for exceptional digital experiences.'
+export const Description = 'An experienced Full Stack Web Developer creating inclusive and robust web apps. Passionate about intuitive interfaces, performance optimization, and secure solutions. Committed to accessibility and inclusive design for exceptional digital experiences.'
 
 export const Contact = {
   linkedin: 'shahmukund',
