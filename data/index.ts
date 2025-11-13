@@ -1,9 +1,9 @@
-export const Description = 'An experienced Full Stack Web Developer creating inclusive and robust web apps. Passionate about intuitive interfaces, performance optimization, and secure solutions. Committed to accessibility and inclusive design for exceptional digital experiences.'
+export const Description = 'A product-centric full-stack engineer with 4+ years of experience building fintech and consumer-facing apps at scale. Passionate about simplifying money and creating user-first products.'
 
 export const Contact = {
   linkedin: 'shahmukund',
   github: 'mukundshah',
-  email: 'email@mukundshah.com.np',
+  email: 'mukundshah058@gmail.com',
 }
 
 export const Stacks = {

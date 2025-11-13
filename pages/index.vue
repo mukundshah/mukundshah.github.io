@@ -11,10 +11,10 @@ const { data: posts } = await useAsyncData('posts', () => queryContent('/writing
 
 defineOgImageComponent('OgImageSplash')
 
-// const socialLinksWithEmail = [
-//   { label: 'Email', to: `mailto:${contact.email}` },
-//   ...socialLinks,
-// ]
+const socialLinksWithEmail = [
+  { label: 'Email', to: `mailto:${contact.email}` },
+  ...socialLinks,
+]
 </script>
 
 <template>
@@ -36,7 +36,7 @@ defineOgImageComponent('OgImageSplash')
         I work with <span class="text-fuchsia-400">Vue/Nuxt</span>, <span class="text-fuchsia-400">React/Next.js</span>, and <span class="text-fuchsia-400">Django/FastAPI</span> to build scalable, secure platforms.
       </p>
 
-      <Links :links="socialLinks" />
+      <Links :links="socialLinksWithEmail" />
     </article>
 
     <article class="flex flex-col gap-8">
