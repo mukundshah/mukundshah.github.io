@@ -11,7 +11,7 @@ const projects: Project[] = [
     id: '4fin',
     title: '4Fin',
     techs: ['Django', 'Nuxt', 'PostgreSQL'],
-    link: 'https://fourfin.app/',
+    link: 'https://fourfin.app/?utm_source=portfolio&utm_medium=web&utm_campaign=project_card',
     isComingSoon: true,
   },
   {
