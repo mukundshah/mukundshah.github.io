@@ -9,7 +9,7 @@ export interface Project {
 const projects: Project[] = [
   {
     id: '4fin',
-    title: '4fin',
+    title: '4Fin',
     techs: ['Django', 'Nuxt', 'PostgreSQL'],
     link: 'https://fourfin.app/',
     isComingSoon: true,
@@ -17,7 +17,7 @@ const projects: Project[] = [
   {
     id: 'media-ingestion-server',
     title: 'Media Ingestion Server',
-    techs: ['Go', 'FFmpeg', 'ImageMagick', 'Docker', 'S3'],
+    techs: ['Go', 'FFmpeg', 'S3'],
     link: 'https://github.com/mukundshah/media-ingestion-server',
   },
 ]
