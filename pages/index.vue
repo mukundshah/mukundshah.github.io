@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import { Contact as contact } from '~/data'
+import { Contact as contact } from '@/data'
+import projects from '@/data/projects'
 
 const socialLinks = [
   { label: 'LinkedIn', to: `https://linkedin.com/in/${contact.linkedin}` },
@@ -33,8 +34,28 @@ defineOgImageComponent('OgImageSplash')
         I work with <span class="text-fuchsia-400">Vue/Nuxt</span>, <span class="text-fuchsia-400">React/Next.js</span>, and <span class="text-fuchsia-400">Django/FastAPI</span> to build scalable, secure platforms.
       </p>
 
-      <!-- <Links :links="socialLinksWithEmail" /> -->
     </article>
+
+
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">
+          Selected projects ({{ projects.length }})
+        </h3>
+      </header>
+      <p v-if="projects.length === 0">
+        Oops, I must work^^^^^
+      </p>
+
+      <section class="flex flex-col gap-4">
+        <ProjectCard
+          v-for="project in projects"
+          :key="project.title"
+          v-bind="project"
+        />
+      </section>
+    </article>
+
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">
