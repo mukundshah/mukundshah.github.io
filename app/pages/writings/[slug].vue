@@ -3,9 +3,9 @@
     <ContentDoc>
       <template #default="{ doc }">
         <OgImage component="OgImageWritings" :props="{ readingMins: doc.readingMins, publishedAt: doc.publishedAt }" />
-        <SchemaOrgArticle :published-at="doc.publishedAt" :modified-at="doc.updatedAt" />
+        <SchemaOrgArticle :modified-at="doc.updatedAt" :published-at="doc.publishedAt" />
 
-        <header role="presentation" class="flex flex-col gap-2">
+        <header class="flex flex-col gap-2" role="presentation">
           <h1 class="text-4xl text-white">
             {{ doc.title }}
           </h1>
@@ -14,7 +14,7 @@
           </p>
           <p> {{ formattedDate(doc.publishedAt) }} &bull; {{ doc.readingMins }} min read </p>
         </header>
-        <ContentRenderer :value="doc" class="post" />
+        <ContentRenderer class="post" :value="doc" />
       </template>
       <template #not-found>
         <p class="text-center text-neutral-400">
@@ -26,6 +26,8 @@
 </template>
 
 <style>
+@reference 'assets/css/tailwind.css';
+
 .post h2 {
   @apply mt-6 text-2xl text-neutral-100;
 }

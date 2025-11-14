@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import { Contact as contact } from '@/data'
 import projects from '@/data/projects'
 
@@ -7,7 +7,16 @@ const socialLinks = [
   { label: 'GitHub', to: `https://github.com/${contact.github}` },
 ]
 
-const { data: posts } = await useAsyncData('posts', () => queryContent('/writings').sort({ publishedAt: -1 }).limit(2).where({ draft: { $ne: true } }).find())
+const { data: posts } = await useAsyncData(
+  'posts',
+  () => queryCollection('content')
+    .select('path', 'title', 'description', 'publishedAt')
+    .where('path', 'LIKE', '/writings/%')
+    .where('draft', '<>', true)
+    .order('publishedAt', 'DESC')
+    .limit(2)
+    .all(),
+)
 
 defineOgImageComponent('OgImageSplash')
 
@@ -44,7 +53,7 @@ const socialLinksWithEmail = [
         <h3 class="text-lg text-neutral-100">
           Latest writings
         </h3>
-        <NuxtLink to="/writings" class="underline decoration-dotted hover:text-neutral-100" active-class="text-neutral-100">
+        <NuxtLink active-class="text-neutral-100" class="underline decoration-dotted hover:text-neutral-100" to="/writings">
           See all writings
         </NuxtLink>
       </header>
@@ -58,10 +67,10 @@ const socialLinksWithEmail = [
           v-for="post in posts?.slice(0, 2)"
           :key="post?._path"
           class="w-full"
-          :published-at="post?.publishedAt"
-          :title="post?.title!"
           :description="post?.description"
           :path="post?._path!"
+          :published-at="post?.publishedAt"
+          :title="post?.title!"
         />
       </section>
     </article>
@@ -93,7 +102,7 @@ const socialLinksWithEmail = [
       </header>
       <p>
         Email me at
-        <NuxtLink :to="`mailto:${contact.email}`" class="underline decoration-dotted hover:text-neutral-100" active-class="text-neutral-100">
+        <NuxtLink active-class="text-neutral-100" class="underline decoration-dotted hover:text-neutral-100" :to="`mailto:${contact.email}`">
           {{ contact.email }}
         </NuxtLink>
         or follow me via my social links.
