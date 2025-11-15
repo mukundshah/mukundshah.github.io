@@ -1,7 +1,7 @@
 ---
 title: "Cloudflare www Redirect"
 description: "Redirect 'https://www' URLs to 'https://' with Cloudflare 301 Redirect, post page rule deprecation"
-publishedAt: 2024-06-10 3:00:00
+date: 2024-06-10 3:00:00
 readingMins: 5
 ---
 

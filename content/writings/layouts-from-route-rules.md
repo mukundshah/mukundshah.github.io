@@ -1,7 +1,7 @@
 ---
 title: "Nuxt Recipe: Setting Layouts from Route Rules"
 description: "A quick guide to dynamically setting layouts in Nuxt using route rules, with a custom module implementation."
-publishedAt: 2024-09-14T13:45:36Z
+date: 2024-09-14T13:45:36Z
 readingMins: 5
 ---
 

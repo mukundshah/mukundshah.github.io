@@ -1,33 +1,32 @@
 <script setup lang="ts">
 defineProps<{
   title: string
-  publishedAt: Date | string
+  date: Date | string
   description: string
   path: string
+  draft?: boolean
 }>()
 </script>
 
 <template>
-  <NuxtLink :to="path" class="group flex cursor-pointer flex-col gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400">
-    <div
-      class="flex w-full flex-col justify-between gap-2 md:flex-row md:items-center"
-    >
+  <NuxtLink class="group flex cursor-pointer flex-col gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400" :to="path">
+    <div class="flex w-full flex-col justify-between gap-2 md:flex-row md:items-center">
       <p class="text-neutral-100">
-        {{ title }}
+        <span v-if="draft" class="text-red-500">(Draft) </span>{{ title }}
       </p>
       <div class="flex flex-row items-center gap-4">
-        <template v-if="publishedAt">
-          <p :title="new Date(publishedAt).toLocaleString()">
-            {{ parseDateAsDuration(publishedAt) }}
+        <template v-if="date">
+          <p :title="new Date(date).toLocaleString()">
+            {{ parseDateAsDuration(date) }}
           </p>
         </template>
 
         <svg
-          width="18"
+          class="transition-all duration-300 group-hover:translate-x-1"
+          fill="none"
           height="18"
           viewBox="0 0 18 18"
-          fill="none"
-          class="transition-all duration-300 group-hover:translate-x-1"
+          width="18"
         >
           <path
             d="M5.25 12.75L12.75 5.25"

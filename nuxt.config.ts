@@ -1,18 +1,20 @@
-import { Description } from './data'
+import tailwindcss from '@tailwindcss/vite'
+import { Description } from './app/data'
 
 export default defineNuxtConfig({
-  compatibilityDate: '2024-08-11',
+  compatibilityDate: '2025-11-14',
+
+  devtools: { enabled: true },
 
   modules: [
+    '@nuxtjs/seo',
     '@nuxt/fonts',
     '@nuxt/image',
     '@nuxt/eslint',
     '@nuxt/content',
-    '@nuxtjs/seo',
-    '@nuxtjs/tailwindcss',
   ],
 
-  devtools: { enabled: true },
+  css: ['assets/css/tailwind.css'],
 
   eslint: { config: { standalone: false } },
 
@@ -22,7 +24,9 @@ export default defineNuxtConfig({
 
   app: {
     rootId: 'site',
-    head: { templateParams: { separator: '-' } },
+    head: {
+      titleTemplate: '%s',
+    },
   },
 
   site: {
@@ -34,24 +38,34 @@ export default defineNuxtConfig({
   },
 
   content: {
-    highlight: {
-      theme: 'catppuccin-mocha',
-      langs: [
-        'bash',
-        'css',
-        'html',
-        'js',
-        'json',
-        'jsx',
-        'md',
-        'mdc',
-        'properties',
-        'ssh-config',
-        'ts',
-        'tsx',
-        'vue',
-        'yaml',
-      ],
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'catppuccin-mocha',
+          langs: [
+            'bash',
+            'css',
+            'html',
+            'js',
+            'json',
+            'jsx',
+            'md',
+            'mdc',
+            'properties',
+            'ssh-config',
+            'ts',
+            'tsx',
+            'vue',
+            'yaml',
+          ],
+        },
+      },
     },
+  },
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
   },
 })

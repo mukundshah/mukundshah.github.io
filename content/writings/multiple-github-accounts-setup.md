@@ -1,7 +1,7 @@
 ---
 title: "Setting Up Multiple GitHub Accounts with Git, SSH, ZSH, and Oh My Zsh"
 description: "A comprehensive guide to configuring multiple GitHub accounts using SSH keys, scoped gitconfig, ZSH, and Oh My Zsh for autoloading SSH keys, with emphasis on backing up existing configurations"
-publishedAt: 2024-09-04
+date: 2024-09-04
 readingMins: 20
 ---
 

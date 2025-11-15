@@ -1,7 +1,7 @@
 ---
 title: "Nuxt Recipe: Explicit Layouts and Component Colocation"
 description: "A hacky module I built to solve my own problems: making nested layouts explicit and keeping pages with their components. The solution was influenced by Next.js App Router's approach."
-publishedAt: 2025-09-13
+date: 2025-09-13
 readingMins: 18
 ---
 

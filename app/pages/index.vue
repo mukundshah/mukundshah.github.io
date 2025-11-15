@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import { Contact as contact } from '@/data'
 import projects from '@/data/projects'
 
@@ -7,7 +7,20 @@ const socialLinks = [
   { label: 'GitHub', to: `https://github.com/${contact.github}` },
 ]
 
-const { data: posts } = await useAsyncData('posts', () => queryContent('/writings').sort({ publishedAt: -1 }).limit(2).where({ draft: { $ne: true } }).find())
+const { data: posts } = await useAsyncData(
+  'posts',
+  async () => {
+    let query = queryCollection('content')
+      .select('path', 'title', 'description', 'date', 'draft')
+      .where('path', 'LIKE', '/writings/%')
+
+    if (!import.meta.dev) {
+      query = query.where('draft', '<>', true)
+    }
+
+    return await query.order('date', 'DESC').limit(2).all()
+  },
+)
 
 defineOgImageComponent('OgImageSplash')
 
@@ -44,7 +57,7 @@ const socialLinksWithEmail = [
         <h3 class="text-lg text-neutral-100">
           Latest writings
         </h3>
-        <NuxtLink to="/writings" class="underline decoration-dotted hover:text-neutral-100" active-class="text-neutral-100">
+        <NuxtLink active-class="text-neutral-100" class="underline decoration-dotted hover:text-neutral-100" to="/writings">
           See all writings
         </NuxtLink>
       </header>
@@ -56,12 +69,12 @@ const socialLinksWithEmail = [
       <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
         <PostCard
           v-for="post in posts?.slice(0, 2)"
-          :key="post?._path"
+          :key="post?.path"
           class="w-full"
-          :published-at="post?.publishedAt"
-          :title="post?.title!"
+          :date="post?.date"
           :description="post?.description"
-          :path="post?._path!"
+          :path="post?.path!"
+          :title="post?.title!"
         />
       </section>
     </article>
@@ -93,7 +106,7 @@ const socialLinksWithEmail = [
       </header>
       <p>
         Email me at
-        <NuxtLink :to="`mailto:${contact.email}`" class="underline decoration-dotted hover:text-neutral-100" active-class="text-neutral-100">
+        <NuxtLink active-class="text-neutral-100" class="underline decoration-dotted hover:text-neutral-100" :to="`mailto:${contact.email}`">
           {{ contact.email }}
         </NuxtLink>
         or follow me via my social links.
