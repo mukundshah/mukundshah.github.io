@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: posts } = await useAsyncData(
-  'posts',
+  'posts:all',
   async () => {
     let query = queryCollection('content')
       .select('path', 'title', 'description', 'date', 'draft')

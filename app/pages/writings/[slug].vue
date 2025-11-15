@@ -2,7 +2,7 @@
 const route = useRoute()
 
 const { data: post } = await useAsyncData(
-  `blog-post:${route.params.slug}`,
+  `posts:${route.params.slug}`,
   async () => {
     let query = queryCollection('content').path(route.path)
 

@@ -8,7 +8,7 @@ const socialLinks = [
 ]
 
 const { data: posts } = await useAsyncData(
-  'posts',
+  'posts:latest-2',
   async () => {
     let query = queryCollection('content')
       .select('path', 'title', 'description', 'date', 'draft')
