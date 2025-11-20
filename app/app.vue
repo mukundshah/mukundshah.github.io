@@ -11,11 +11,3 @@ defineOgImageComponent('OgImageDefault')
     <NuxtPage />
   </Body>
 </template>
-
-<style>
-@reference 'assets/css/tailwind.css';
-
-#site {
-  @apply mx-auto flex min-h-screen max-w-[872px] flex-col gap-9 px-10 py-8 text-sm text-neutral-400 md:gap-20 md:py-12;
-}
-</style>
