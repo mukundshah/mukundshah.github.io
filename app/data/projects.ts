@@ -15,10 +15,10 @@ const projects: Project[] = [
     isComingSoon: true,
   },
   {
-    id: 'media-ingestion-server',
-    title: 'Media Ingestion Server',
-    techs: ['Go', 'FFmpeg', 'S3'],
-    link: 'https://github.com/mukundshah/media-ingestion-server',
+    id: 'mediaconvert',
+    title: 'Media Convert',
+    techs: ['Go', 'FFmpeg', 'S3', 'Redis'],
+    link: 'https://github.com/mukundshah/mediaconvert',
   },
 ]
 
